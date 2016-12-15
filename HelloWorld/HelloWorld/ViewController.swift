@@ -10,12 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var michaelTextField: UITextField!
     
     @IBOutlet weak var label: UILabel!
 
-    @IBAction func buttonPressed(_ sender: Any) {
-        label.text = textField.text
+    @IBAction func sayHelloAction(_ sender: AnyObject) {
+        label.text = michaelTextField.text
+        
     }
     
 

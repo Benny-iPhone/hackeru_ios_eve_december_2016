@@ -21,17 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM6-yt-dYs">
-                                <rect key="frame" x="132" y="75" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM6-yt-dYs">
+                                <rect key="frame" x="131.5" y="82" width="57" height="30"/>
                                 <state key="normal" title="click me"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5DU-hT-CQ6"/>
+                                    <action selector="sayHelloAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZm-IE-Kfk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igs-NH-a5z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igs-NH-a5z">
                                 <rect key="frame" x="139" y="123" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,18 +39,25 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="sayHelloAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="CW5-th-mJb"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="T8Y-o4-5Sn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64" id="0HH-HK-LSY"/>
+                            <constraint firstItem="Igs-NH-a5z" firstAttribute="top" secondItem="yM6-yt-dYs" secondAttribute="bottom" constant="11" id="EZa-gN-3c6"/>
+                            <constraint firstItem="yM6-yt-dYs" firstAttribute="top" secondItem="T8Y-o4-5Sn" secondAttribute="bottom" constant="16" id="LGS-T8-wYI"/>
+                            <constraint firstItem="Igs-NH-a5z" firstAttribute="centerX" secondItem="yM6-yt-dYs" secondAttribute="centerX" id="bud-vC-eg6"/>
                             <constraint firstAttribute="trailing" secondItem="T8Y-o4-5Sn" secondAttribute="trailing" constant="64" id="m4j-zQ-A8A"/>
                             <constraint firstItem="T8Y-o4-5Sn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="wuL-aI-vPI"/>
+                            <constraint firstItem="yM6-yt-dYs" firstAttribute="centerX" secondItem="T8Y-o4-5Sn" secondAttribute="centerX" id="yf1-vO-E3t"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="Igs-NH-a5z" id="Wvt-bB-70j"/>
-                        <outlet property="textField" destination="T8Y-o4-5Sn" id="YYQ-Vy-lCh"/>
+                        <outlet property="michaelTextField" destination="T8Y-o4-5Sn" id="LkQ-To-Noz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
