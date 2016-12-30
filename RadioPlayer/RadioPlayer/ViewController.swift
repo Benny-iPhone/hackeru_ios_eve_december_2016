@@ -18,6 +18,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        try? AVAudioSession.sharedInstance().setActive(true)
+        
+        do{
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch{
+            print(error)
+        }
         // Do any additional setup after loading the view, typically from a nib.
         volumeSlider.value = 0.7
         
@@ -33,13 +41,15 @@ class ViewController: UIViewController {
             player?.volume = volumeSlider.value
             player?.play()
             
-            sender.setTitle("Pause", for: .normal)
+            sender.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
+            //sender.setTitle("Pause", for: .normal)
         } else {
             
             player?.pause()
             self.player = nil
             
-            sender.setTitle("Play", for: .normal)
+            sender.setImage(#imageLiteral(resourceName: "play"), for: .normal)
+            //sender.setTitle("Play", for: .normal)
             
         }
     }

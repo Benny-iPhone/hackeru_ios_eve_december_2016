@@ -96,7 +96,13 @@
 				TargetAttributes = {
 					B2EE0CC21E1197E1002CF7D9 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = S3VXA7W346;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -258,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3VXA7W346;
 				INFOPLIST_FILE = RadioPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.RadioPlayer;
@@ -270,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3VXA7W346;
 				INFOPLIST_FILE = RadioPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.RadioPlayer;
@@ -297,6 +305,7 @@
 				B2EE0CD71E1197E1002CF7D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
