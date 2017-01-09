@@ -28,13 +28,24 @@
                                     <segue destination="42C-oc-rco" kind="presentation" modalTransitionStyle="flipHorizontal" id="wlL-BE-gIY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIv-mU-hfn">
+                                <rect key="frame" x="145" y="312.5" width="87" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cPv-od-boo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Djl-Zc-c1e"/>
                             <constraint firstAttribute="trailing" secondItem="cPv-od-boo" secondAttribute="trailing" constant="16" id="XGU-5F-Zsh"/>
+                            <constraint firstItem="jIv-mU-hfn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d1G-lk-czk"/>
+                            <constraint firstItem="jIv-mU-hfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzc-It-7c2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="jIv-mU-hfn" id="eDq-Dq-wjM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwA-IO-Y1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="753" y="139"/>
+            <point key="canvasLocation" x="890" y="37"/>
         </scene>
     </scenes>
 </document>

@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B245AFF61E23E7920061A632 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245AFF51E23E7920061A632 /* Model.swift */; };
-		B2EE0CC71E1197E1002CF7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE0CC61E1197E1002CF7D9 /* AppDelegate.swift */; };
-		B2EE0CC91E1197E1002CF7D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE0CC81E1197E1002CF7D9 /* ViewController.swift */; };
-		B2EE0CCC1E1197E1002CF7D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EE0CCA1E1197E1002CF7D9 /* Main.storyboard */; };
-		B2EE0CCE1E1197E1002CF7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2EE0CCD1E1197E1002CF7D9 /* Assets.xcassets */; };
-		B2EE0CD11E1197E1002CF7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EE0CCF1E1197E1002CF7D9 /* LaunchScreen.storyboard */; };
+		B245B0041E240CAD0061A632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245B0031E240CAD0061A632 /* AppDelegate.swift */; };
+		B245B0061E240CAD0061A632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245B0051E240CAD0061A632 /* ViewController.swift */; };
+		B245B0091E240CAD0061A632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B245B0071E240CAD0061A632 /* Main.storyboard */; };
+		B245B00B1E240CAD0061A632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B245B00A1E240CAD0061A632 /* Assets.xcassets */; };
+		B245B00E1E240CAD0061A632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B245B00C1E240CAD0061A632 /* LaunchScreen.storyboard */; };
+		B245B0171E24163C0061A632 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245B0161E24163C0061A632 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B245AFF51E23E7920061A632 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B2EE0CC31E1197E1002CF7D9 /* RadioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2EE0CC61E1197E1002CF7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2EE0CC81E1197E1002CF7D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2EE0CCB1E1197E1002CF7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2EE0CCD1E1197E1002CF7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B2EE0CD01E1197E1002CF7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B2EE0CD21E1197E1002CF7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B245B0001E240CAD0061A632 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B245B0031E240CAD0061A632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B245B0051E240CAD0061A632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B245B0081E240CAD0061A632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B245B00A1E240CAD0061A632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B245B00D1E240CAD0061A632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B245B00F1E240CAD0061A632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B245B0161E24163C0061A632 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B2EE0CC01E1197E1002CF7D9 /* Frameworks */ = {
+		B245AFFD1E240CAD0061A632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,79 +37,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B2EE0CBA1E1197E1002CF7D9 = {
+		B245AFF71E240CAD0061A632 = {
 			isa = PBXGroup;
 			children = (
-				B2EE0CC51E1197E1002CF7D9 /* RadioPlayer */,
-				B2EE0CC41E1197E1002CF7D9 /* Products */,
+				B245B0021E240CAD0061A632 /* Calculator */,
+				B245B0011E240CAD0061A632 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B2EE0CC41E1197E1002CF7D9 /* Products */ = {
+		B245B0011E240CAD0061A632 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2EE0CC31E1197E1002CF7D9 /* RadioPlayer.app */,
+				B245B0001E240CAD0061A632 /* Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2EE0CC51E1197E1002CF7D9 /* RadioPlayer */ = {
+		B245B0021E240CAD0061A632 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				B245AFF51E23E7920061A632 /* Model.swift */,
-				B2EE0CC61E1197E1002CF7D9 /* AppDelegate.swift */,
-				B2EE0CC81E1197E1002CF7D9 /* ViewController.swift */,
-				B2EE0CCA1E1197E1002CF7D9 /* Main.storyboard */,
-				B2EE0CCD1E1197E1002CF7D9 /* Assets.xcassets */,
-				B2EE0CCF1E1197E1002CF7D9 /* LaunchScreen.storyboard */,
-				B2EE0CD21E1197E1002CF7D9 /* Info.plist */,
+				B245B0151E24162B0061A632 /* model */,
+				B245B0031E240CAD0061A632 /* AppDelegate.swift */,
+				B245B0051E240CAD0061A632 /* ViewController.swift */,
+				B245B0071E240CAD0061A632 /* Main.storyboard */,
+				B245B00A1E240CAD0061A632 /* Assets.xcassets */,
+				B245B00C1E240CAD0061A632 /* LaunchScreen.storyboard */,
+				B245B00F1E240CAD0061A632 /* Info.plist */,
 			);
-			path = RadioPlayer;
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		B245B0151E24162B0061A632 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B245B0161E24163C0061A632 /* Brain.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2EE0CC21E1197E1002CF7D9 /* RadioPlayer */ = {
+		B245AFFF1E240CAD0061A632 /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2EE0CD51E1197E1002CF7D9 /* Build configuration list for PBXNativeTarget "RadioPlayer" */;
+			buildConfigurationList = B245B0121E240CAD0061A632 /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
-				B2EE0CBF1E1197E1002CF7D9 /* Sources */,
-				B2EE0CC01E1197E1002CF7D9 /* Frameworks */,
-				B2EE0CC11E1197E1002CF7D9 /* Resources */,
+				B245AFFC1E240CAD0061A632 /* Sources */,
+				B245AFFD1E240CAD0061A632 /* Frameworks */,
+				B245AFFE1E240CAD0061A632 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RadioPlayer;
-			productName = RadioPlayer;
-			productReference = B2EE0CC31E1197E1002CF7D9 /* RadioPlayer.app */;
+			name = Calculator;
+			productName = Calculator;
+			productReference = B245B0001E240CAD0061A632 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B2EE0CBB1E1197E1002CF7D9 /* Project object */ = {
+		B245AFF81E240CAD0061A632 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = xcoder.solutions;
 				TargetAttributes = {
-					B2EE0CC21E1197E1002CF7D9 = {
+					B245AFFF1E240CAD0061A632 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S3VXA7W346;
 						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 				};
 			};
-			buildConfigurationList = B2EE0CBE1E1197E1002CF7D9 /* Build configuration list for PBXProject "RadioPlayer" */;
+			buildConfigurationList = B245AFFB1E240CAD0061A632 /* Build configuration list for PBXProject "Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,55 +119,55 @@
 				en,
 				Base,
 			);
-			mainGroup = B2EE0CBA1E1197E1002CF7D9;
-			productRefGroup = B2EE0CC41E1197E1002CF7D9 /* Products */;
+			mainGroup = B245AFF71E240CAD0061A632;
+			productRefGroup = B245B0011E240CAD0061A632 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2EE0CC21E1197E1002CF7D9 /* RadioPlayer */,
+				B245AFFF1E240CAD0061A632 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B2EE0CC11E1197E1002CF7D9 /* Resources */ = {
+		B245AFFE1E240CAD0061A632 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2EE0CD11E1197E1002CF7D9 /* LaunchScreen.storyboard in Resources */,
-				B2EE0CCE1E1197E1002CF7D9 /* Assets.xcassets in Resources */,
-				B2EE0CCC1E1197E1002CF7D9 /* Main.storyboard in Resources */,
+				B245B00E1E240CAD0061A632 /* LaunchScreen.storyboard in Resources */,
+				B245B00B1E240CAD0061A632 /* Assets.xcassets in Resources */,
+				B245B0091E240CAD0061A632 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B2EE0CBF1E1197E1002CF7D9 /* Sources */ = {
+		B245AFFC1E240CAD0061A632 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B245AFF61E23E7920061A632 /* Model.swift in Sources */,
-				B2EE0CC91E1197E1002CF7D9 /* ViewController.swift in Sources */,
-				B2EE0CC71E1197E1002CF7D9 /* AppDelegate.swift in Sources */,
+				B245B0061E240CAD0061A632 /* ViewController.swift in Sources */,
+				B245B0171E24163C0061A632 /* Brain.swift in Sources */,
+				B245B0041E240CAD0061A632 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B2EE0CCA1E1197E1002CF7D9 /* Main.storyboard */ = {
+		B245B0071E240CAD0061A632 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2EE0CCB1E1197E1002CF7D9 /* Base */,
+				B245B0081E240CAD0061A632 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B2EE0CCF1E1197E1002CF7D9 /* LaunchScreen.storyboard */ = {
+		B245B00C1E240CAD0061A632 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2EE0CD01E1197E1002CF7D9 /* Base */,
+				B245B00D1E240CAD0061A632 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,7 +175,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B2EE0CD31E1197E1002CF7D9 /* Debug */ = {
+		B245B0101E240CAD0061A632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		B2EE0CD41E1197E1002CF7D9 /* Release */ = {
+		B245B0111E240CAD0061A632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,27 +266,25 @@
 			};
 			name = Release;
 		};
-		B2EE0CD61E1197E1002CF7D9 /* Debug */ = {
+		B245B0131E240CAD0061A632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S3VXA7W346;
-				INFOPLIST_FILE = RadioPlayer/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.RadioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		B2EE0CD71E1197E1002CF7D9 /* Release */ = {
+		B245B0141E240CAD0061A632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S3VXA7W346;
-				INFOPLIST_FILE = RadioPlayer/Info.plist;
+				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.RadioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -293,25 +293,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2EE0CBE1E1197E1002CF7D9 /* Build configuration list for PBXProject "RadioPlayer" */ = {
+		B245AFFB1E240CAD0061A632 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2EE0CD31E1197E1002CF7D9 /* Debug */,
-				B2EE0CD41E1197E1002CF7D9 /* Release */,
+				B245B0101E240CAD0061A632 /* Debug */,
+				B245B0111E240CAD0061A632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2EE0CD51E1197E1002CF7D9 /* Build configuration list for PBXNativeTarget "RadioPlayer" */ = {
+		B245B0121E240CAD0061A632 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2EE0CD61E1197E1002CF7D9 /* Debug */,
-				B2EE0CD71E1197E1002CF7D9 /* Release */,
+				B245B0131E240CAD0061A632 /* Debug */,
+				B245B0141E240CAD0061A632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B2EE0CBB1E1197E1002CF7D9 /* Project object */;
+	rootObject = B245AFF81E240CAD0061A632 /* Project object */;
 }
