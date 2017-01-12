@@ -14,7 +14,15 @@ protocol SecondViewControllerDelegate {
 
 class SecondViewController: UIViewController {
 
+    var info : String?
+    @IBOutlet weak var textField: UITextField!
     var delegate : SecondViewControllerDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textField.text = info
+    }
     
     @IBAction func doneAction(_ sender: UITextField) {
         //notify delegate

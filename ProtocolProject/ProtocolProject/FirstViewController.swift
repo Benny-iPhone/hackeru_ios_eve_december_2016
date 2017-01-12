@@ -28,6 +28,7 @@ SecondViewControllerDelegate {
         
         if let nextVC = segue.destination as? SecondViewController{
             nextVC.delegate = self
+            nextVC.info = label.text
         }
         
         // Get the new view controller using segue.destinationViewController.

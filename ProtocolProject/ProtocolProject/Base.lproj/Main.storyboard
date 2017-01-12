@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIv-mU-hfn">
-                                <rect key="frame" x="145" y="312.5" width="87" height="43"/>
+                                <rect key="frame" x="144" y="312.5" width="87" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,6 +79,9 @@
                             <constraint firstItem="2lC-Y6-w57" firstAttribute="top" secondItem="RkX-07-0jK" secondAttribute="bottom" constant="24" id="vTo-8F-xOJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="2lC-Y6-w57" id="c6r-jm-0F9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwA-IO-Y1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
