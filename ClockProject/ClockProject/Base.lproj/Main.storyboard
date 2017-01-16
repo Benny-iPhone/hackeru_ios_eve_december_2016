@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClockProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYm-r7-thm">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="red_hand" translatesAutoresizingMaskIntoConstraints="NO" id="8T2-1z-8aj">
+                                        <rect key="frame" x="119" y="0.0" width="2" height="240"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="0nh-OT-UWX"/>
+                                    <constraint firstAttribute="width" constant="240" id="Ojb-Ko-bXl"/>
+                                    <constraint firstItem="8T2-1z-8aj" firstAttribute="centerY" secondItem="EYm-r7-thm" secondAttribute="centerY" id="SxT-s9-gSw"/>
+                                    <constraint firstItem="8T2-1z-8aj" firstAttribute="centerX" secondItem="EYm-r7-thm" secondAttribute="centerX" id="y7t-6a-UUQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EYm-r7-thm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TMe-oj-axa"/>
+                            <constraint firstItem="EYm-r7-thm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nF1-Ht-rjf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clockView" destination="EYm-r7-thm" id="A71-pI-DPi"/>
+                        <outlet property="heightConstraint" destination="0nh-OT-UWX" id="vON-C4-bzG"/>
+                        <outlet property="secondsHand" destination="8T2-1z-8aj" id="02V-la-5Zr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="red_hand" width="2" height="240"/>
+    </resources>
+</document>
