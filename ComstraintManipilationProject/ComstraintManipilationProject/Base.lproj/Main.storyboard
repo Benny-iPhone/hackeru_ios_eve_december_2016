@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComstraintManipilationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izs-3R-cBr">
+                                <rect key="frame" x="16" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VER-p6-7t9">
+                                <rect key="frame" x="12" y="57" width="50" height="30"/>
+                                <state key="normal" title="move it"/>
+                                <connections>
+                                    <action selector="moveItAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dP9-QJ-VCU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5c-EE-zae">
+                                <rect key="frame" x="105.5" y="305.5" width="164" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAbel LAbel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bd-Xu-31E">
+                                        <rect key="frame" x="8" y="17.5" width="92" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basketball_2" translatesAutoresizingMaskIntoConstraints="NO" id="fyK-pn-PaE">
+                                        <rect key="frame" x="108" y="4" width="48" height="48"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8Bd-Xu-31E" firstAttribute="centerY" secondItem="fyK-pn-PaE" secondAttribute="centerY" id="2l1-Se-0yG"/>
+                                    <constraint firstItem="fyK-pn-PaE" firstAttribute="leading" secondItem="8Bd-Xu-31E" secondAttribute="trailing" constant="8" id="6gl-iS-Iyo"/>
+                                    <constraint firstAttribute="trailing" secondItem="fyK-pn-PaE" secondAttribute="trailing" constant="8" id="KoN-V1-QxH"/>
+                                    <constraint firstAttribute="bottom" secondItem="fyK-pn-PaE" secondAttribute="bottom" constant="4" id="kWu-SK-ngP"/>
+                                    <constraint firstItem="fyK-pn-PaE" firstAttribute="top" secondItem="w5c-EE-zae" secondAttribute="top" constant="4" id="mck-RF-Mdq"/>
+                                    <constraint firstItem="8Bd-Xu-31E" firstAttribute="leading" secondItem="w5c-EE-zae" secondAttribute="leading" constant="8" id="yLy-dc-jbX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="izs-3R-cBr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DEX-br-yMF"/>
+                            <constraint firstItem="VER-p6-7t9" firstAttribute="centerX" secondItem="izs-3R-cBr" secondAttribute="centerX" id="DZ4-cS-Fdu"/>
+                            <constraint firstItem="izs-3R-cBr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Z1j-51-tmU"/>
+                            <constraint firstItem="w5c-EE-zae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g53-sF-MUu"/>
+                            <constraint firstItem="VER-p6-7t9" firstAttribute="top" secondItem="izs-3R-cBr" secondAttribute="bottom" constant="8" id="k2v-fv-aYI"/>
+                            <constraint firstItem="w5c-EE-zae" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pOh-4U-YaV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelLeadingConstraint" destination="Z1j-51-tmU" id="DRb-JD-Std"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="basketball_2" width="48" height="48"/>
+    </resources>
+</document>

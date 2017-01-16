@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    let brain = Brain()
+    
+    @IBAction func operatorAction(_ sender: UIButton) {
+        guard let op = Brain.Operator(rawValue: sender.tag) else {
+            return
+        }
+        
+        label.text = brain.addOperator(op)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

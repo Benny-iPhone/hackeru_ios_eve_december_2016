@@ -17,7 +17,8 @@ import Foundation
  */
 class Brain: NSObject {
     enum Operator : Int{
-        case plus
+        case plus = 100
+        case minus, multi, div
         //more cases will come soon
     }
     
