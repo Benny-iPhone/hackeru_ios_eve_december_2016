@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawSomethingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-EJ-1c2">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="pzP-d6-ycd">
+                                        <connections>
+                                            <action selector="clearAction:" destination="BYZ-38-t0r" id="WIJ-18-jAJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yaw-c3-jID"/>
+                                    <barButtonItem style="plain" id="mAH-3z-Wfl">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" id="Aw0-a5-s4P">
+                                            <rect key="frame" x="75" y="7" width="118" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WrI-UH-VAa"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="msI-fd-qZv"/>
+                                    <barButtonItem title="Red" id="RAj-48-Mzm">
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="redAction:" destination="BYZ-38-t0r" id="8lT-rn-GVm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Blue" id="6Ot-Kh-i3q">
+                                        <connections>
+                                            <action selector="blueAction:" destination="BYZ-38-t0r" id="1sy-gH-Ktf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Black" id="fhj-Rn-8UL">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="blackAction:" destination="BYZ-38-t0r" id="JAU-w3-LZ0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-3k-on7" customClass="DrawSomethingView" customModule="DrawSomethingProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1gD-EJ-1c2" firstAttribute="top" secondItem="zWH-3k-on7" secondAttribute="bottom" id="2HO-fg-JcX"/>
+                            <constraint firstItem="zWH-3k-on7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6i0-7M-w7p"/>
+                            <constraint firstAttribute="trailing" secondItem="1gD-EJ-1c2" secondAttribute="trailing" id="c5b-WK-hvg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1gD-EJ-1c2" secondAttribute="bottom" id="hyl-ak-ca8"/>
+                            <constraint firstItem="1gD-EJ-1c2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mQg-6n-Zks"/>
+                            <constraint firstAttribute="trailing" secondItem="zWH-3k-on7" secondAttribute="trailing" id="rYG-ex-2G3"/>
+                            <constraint firstItem="zWH-3k-on7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uHC-OH-bHO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawView" destination="zWH-3k-on7" id="MII-3v-NPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
