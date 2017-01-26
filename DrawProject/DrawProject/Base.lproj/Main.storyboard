@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2l9-ih-5gT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,9 +36,79 @@
                             <constraint firstItem="MID-3f-9e9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w5h-JV-zfQ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Q5x-f0-Lxo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079" y="639"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xql-0M-PzX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2l9-ih-5gT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Y0z-1S-y8r">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="6ur-69-aXu"/>
+                        <segue destination="sNe-2d-pYR" kind="relationship" relationship="viewControllers" id="qHh-I3-uRG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0v-mk-Yt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="gJw-Xp-V6f">
+            <objects>
+                <viewController id="sNe-2d-pYR" customClass="CircleViewController" customModule="DrawProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQy-s4-hh4"/>
+                        <viewControllerLayoutGuide type="bottom" id="iaF-FS-8qH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Owd-CW-5NQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-Kz-tMe" customClass="CircleView" customModule="DrawProject" customModuleProvider="target">
+                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Erd-r3-Je3"/>
+                                    <constraint firstAttribute="width" constant="300" id="soq-Jy-fca"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleWidth">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="FYE-NO-07V">
+                                <rect key="frame" x="14" y="572" width="347" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="sNe-2d-pYR" eventType="valueChanged" id="ASV-sS-Rys"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iaF-FS-8qH" firstAttribute="top" secondItem="FYE-NO-07V" secondAttribute="bottom" constant="16" id="1nb-J6-nmJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FYE-NO-07V" secondAttribute="trailing" constant="16" id="Fv1-yD-4K6"/>
+                            <constraint firstItem="GMM-Kz-tMe" firstAttribute="centerY" secondItem="Owd-CW-5NQ" secondAttribute="centerY" id="Kux-wc-nY3"/>
+                            <constraint firstItem="FYE-NO-07V" firstAttribute="leading" secondItem="Owd-CW-5NQ" secondAttribute="leading" constant="16" id="YnK-Vj-jvw"/>
+                            <constraint firstItem="GMM-Kz-tMe" firstAttribute="centerX" secondItem="Owd-CW-5NQ" secondAttribute="centerX" id="kpI-at-Imy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="f8d-zh-ulq"/>
+                    <connections>
+                        <outlet property="circleView" destination="GMM-Kz-tMe" id="N4y-CY-awc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63i-cx-ZAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="-54"/>
         </scene>
     </scenes>
 </document>
