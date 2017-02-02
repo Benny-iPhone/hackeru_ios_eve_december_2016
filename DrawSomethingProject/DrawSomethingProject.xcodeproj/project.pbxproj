@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A86F7C6A7F7002C2378E8B6 /* Pods_DrawSomethingProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0EC4E7F663182C304D271 /* Pods_DrawSomethingProject.framework */; };
 		B2161C4F1E3A678D00A5DB67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2161C4E1E3A678D00A5DB67 /* AppDelegate.swift */; };
 		B2161C511E3A678D00A5DB67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2161C501E3A678D00A5DB67 /* ViewController.swift */; };
 		B2161C541E3A678D00A5DB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2161C521E3A678D00A5DB67 /* Main.storyboard */; };
@@ -14,9 +15,14 @@
 		B2161C591E3A678D00A5DB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2161C571E3A678D00A5DB67 /* LaunchScreen.storyboard */; };
 		B2161C611E3A679A00A5DB67 /* DrawSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2161C601E3A679A00A5DB67 /* DrawSomethingView.swift */; };
 		B2161C641E3A7D5400A5DB67 /* ColorBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2161C631E3A7D5400A5DB67 /* ColorBezierPath.swift */; };
+		B2E1E4BF1E3F9AC3003868D2 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E4BE1E3F9AC3003868D2 /* ViewUtils.swift */; };
+		B2E1E5061E43A67B003868D2 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E5051E43A67B003868D2 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048EE92692BB310F3B2350CC /* Pods-DrawSomethingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawSomethingProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawSomethingProject/Pods-DrawSomethingProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2D79B95F010197BBBC74C171 /* Pods-DrawSomethingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawSomethingProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawSomethingProject/Pods-DrawSomethingProject.release.xcconfig"; sourceTree = "<group>"; };
+		A9D0EC4E7F663182C304D271 /* Pods_DrawSomethingProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawSomethingProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2161C4B1E3A678D00A5DB67 /* DrawSomethingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawSomethingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2161C4E1E3A678D00A5DB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2161C501E3A678D00A5DB67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		B2161C5A1E3A678D00A5DB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2161C601E3A679A00A5DB67 /* DrawSomethingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawSomethingView.swift; sourceTree = "<group>"; };
 		B2161C631E3A7D5400A5DB67 /* ColorBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBezierPath.swift; sourceTree = "<group>"; };
+		B2E1E4BE1E3F9AC3003868D2 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		B2E1E5051E43A67B003868D2 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A86F7C6A7F7002C2378E8B6 /* Pods_DrawSomethingProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1FB104102D04DB1300FE35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				048EE92692BB310F3B2350CC /* Pods-DrawSomethingProject.debug.xcconfig */,
+				2D79B95F010197BBBC74C171 /* Pods-DrawSomethingProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77914F3D8D2EC4B4DC1E59C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9D0EC4E7F663182C304D271 /* Pods_DrawSomethingProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2161C421E3A678C00A5DB67 = {
 			isa = PBXGroup;
 			children = (
 				B2161C4D1E3A678D00A5DB67 /* DrawSomethingProject */,
 				B2161C4C1E3A678D00A5DB67 /* Products */,
+				1B1FB104102D04DB1300FE35 /* Pods */,
+				77914F3D8D2EC4B4DC1E59C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +89,7 @@
 				B2161C621E3A67A000A5DB67 /* view */,
 				B2161C4E1E3A678D00A5DB67 /* AppDelegate.swift */,
 				B2161C501E3A678D00A5DB67 /* ViewController.swift */,
+				B2E1E5051E43A67B003868D2 /* ColorViewController.swift */,
 				B2161C521E3A678D00A5DB67 /* Main.storyboard */,
 				B2161C551E3A678D00A5DB67 /* Assets.xcassets */,
 				B2161C571E3A678D00A5DB67 /* LaunchScreen.storyboard */,
@@ -74,6 +103,7 @@
 			children = (
 				B2161C601E3A679A00A5DB67 /* DrawSomethingView.swift */,
 				B2161C631E3A7D5400A5DB67 /* ColorBezierPath.swift */,
+				B2E1E4BE1E3F9AC3003868D2 /* ViewUtils.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -85,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2161C5D1E3A678D00A5DB67 /* Build configuration list for PBXNativeTarget "DrawSomethingProject" */;
 			buildPhases = (
+				69E698AD46FF43F3B109BF0D /* [CP] Check Pods Manifest.lock */,
 				B2161C471E3A678D00A5DB67 /* Sources */,
 				B2161C481E3A678D00A5DB67 /* Frameworks */,
 				B2161C491E3A678D00A5DB67 /* Resources */,
+				BFC3E27CD5CB2F4DE462876E /* [CP] Embed Pods Frameworks */,
+				CBEC3A15B781D64676718B50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +143,7 @@
 				TargetAttributes = {
 					B2161C4A1E3A678D00A5DB67 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J7YZTH9Z4F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,14 +179,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69E698AD46FF43F3B109BF0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC3E27CD5CB2F4DE462876E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawSomethingProject/Pods-DrawSomethingProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEC3A15B781D64676718B50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawSomethingProject/Pods-DrawSomethingProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2161C471E3A678D00A5DB67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B2161C611E3A679A00A5DB67 /* DrawSomethingView.swift in Sources */,
+				B2E1E4BF1E3F9AC3003868D2 /* ViewUtils.swift in Sources */,
 				B2161C641E3A7D5400A5DB67 /* ColorBezierPath.swift in Sources */,
 				B2161C511E3A678D00A5DB67 /* ViewController.swift in Sources */,
+				B2E1E5061E43A67B003868D2 /* ColorViewController.swift in Sources */,
 				B2161C4F1E3A678D00A5DB67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +356,12 @@
 		};
 		B2161C5E1E3A678D00A5DB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 048EE92692BB310F3B2350CC /* Pods-DrawSomethingProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = DrawSomethingProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.DrawSomethingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,9 +371,12 @@
 		};
 		B2161C5F1E3A678D00A5DB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D79B95F010197BBBC74C171 /* Pods-DrawSomethingProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = DrawSomethingProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.DrawSomethingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,6 +403,7 @@
 				B2161C5F1E3A678D00A5DB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

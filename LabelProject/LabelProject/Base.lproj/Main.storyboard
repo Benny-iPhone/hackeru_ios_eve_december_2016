@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LabelProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 111111111שושו השועל" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-ib-yPX" customClass="HiLabel" customModule="LabelProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="220.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjX-SA-9ej" customClass="HiLabel" customModule="LabelProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="68" width="200" height="60.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="s63-d9-nV2"/>
+                                </constraints>
+                                <string key="text">Line 1
+Line 22222222</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Xq-7m-DG9">
+                                <rect key="frame" x="310" y="28" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mD2-6N-9Rf"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mjX-SA-9ej" firstAttribute="leading" secondItem="KKr-ib-yPX" secondAttribute="leading" id="5jy-ky-Dl2"/>
+                            <constraint firstItem="0Xq-7m-DG9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="MMJ-Ld-ZQ6"/>
+                            <constraint firstItem="KKr-ib-yPX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ToK-8p-cRW"/>
+                            <constraint firstItem="0Xq-7m-DG9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KKr-ib-yPX" secondAttribute="trailing" constant="8" id="hDg-cZ-uAK"/>
+                            <constraint firstAttribute="trailing" secondItem="0Xq-7m-DG9" secondAttribute="trailing" constant="16" id="qzV-qr-X06"/>
+                            <constraint firstItem="mjX-SA-9ej" firstAttribute="top" secondItem="KKr-ib-yPX" secondAttribute="bottom" constant="16" id="w9h-pf-ncc"/>
+                            <constraint firstItem="KKr-ib-yPX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zWH-jE-Vlt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="labels" destination="KKr-ib-yPX" collectionClass="NSMutableArray" id="VNN-26-Qoz"/>
+                        <outletCollection property="labels" destination="mjX-SA-9ej" collectionClass="NSMutableArray" id="5j9-Fh-rPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

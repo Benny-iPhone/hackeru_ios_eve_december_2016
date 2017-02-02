@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2E1E5141E43B144003868D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E5131E43B144003868D2 /* AppDelegate.swift */; };
+		B2E1E5161E43B144003868D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E5151E43B144003868D2 /* ViewController.swift */; };
+		B2E1E5191E43B144003868D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E5171E43B144003868D2 /* Main.storyboard */; };
+		B2E1E51B1E43B144003868D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E51A1E43B144003868D2 /* Assets.xcassets */; };
+		B2E1E51E1E43B144003868D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E51C1E43B144003868D2 /* LaunchScreen.storyboard */; };
+		B2E1E5271E43B422003868D2 /* CustomFontLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E5261E43B422003868D2 /* CustomFontLabel.swift */; };
+		B2E1E5311E43B74E003868D2 /* Sansita-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E5291E43B74E003868D2 /* Sansita-Black.ttf */; };
+		B2E1E5321E43B74E003868D2 /* Sansita-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52A1E43B74E003868D2 /* Sansita-BlackItalic.ttf */; };
+		B2E1E5331E43B74E003868D2 /* Sansita-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52B1E43B74E003868D2 /* Sansita-Bold.ttf */; };
+		B2E1E5341E43B74E003868D2 /* Sansita-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52C1E43B74E003868D2 /* Sansita-BoldItalic.ttf */; };
+		B2E1E5351E43B74E003868D2 /* Sansita-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52D1E43B74E003868D2 /* Sansita-ExtraBold.ttf */; };
+		B2E1E5361E43B74E003868D2 /* Sansita-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52E1E43B74E003868D2 /* Sansita-ExtraBoldItalic.ttf */; };
+		B2E1E5371E43B74E003868D2 /* Sansita-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E52F1E43B74E003868D2 /* Sansita-Italic.ttf */; };
+		B2E1E5381E43B74E003868D2 /* Sansita-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E5301E43B74E003868D2 /* Sansita-Regular.ttf */; };
+		B2E1E53A1E43B77A003868D2 /* Barrio-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2E1E5391E43B767003868D2 /* Barrio-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2E1E5101E43B143003868D2 /* CustomFontProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFontProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E1E5131E43B144003868D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2E1E5151E43B144003868D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2E1E5181E43B144003868D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2E1E51A1E43B144003868D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2E1E51D1E43B144003868D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2E1E51F1E43B144003868D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E1E5261E43B422003868D2 /* CustomFontLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontLabel.swift; sourceTree = "<group>"; };
+		B2E1E5291E43B74E003868D2 /* Sansita-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Black.ttf"; sourceTree = "<group>"; };
+		B2E1E52A1E43B74E003868D2 /* Sansita-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-BlackItalic.ttf"; sourceTree = "<group>"; };
+		B2E1E52B1E43B74E003868D2 /* Sansita-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Bold.ttf"; sourceTree = "<group>"; };
+		B2E1E52C1E43B74E003868D2 /* Sansita-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B2E1E52D1E43B74E003868D2 /* Sansita-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B2E1E52E1E43B74E003868D2 /* Sansita-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B2E1E52F1E43B74E003868D2 /* Sansita-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Italic.ttf"; sourceTree = "<group>"; };
+		B2E1E5301E43B74E003868D2 /* Sansita-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Regular.ttf"; sourceTree = "<group>"; };
+		B2E1E5391E43B767003868D2 /* Barrio-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barrio-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2E1E50D1E43B143003868D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2E1E5071E43B143003868D2 = {
+			isa = PBXGroup;
+			children = (
+				B2E1E5121E43B143003868D2 /* CustomFontProject */,
+				B2E1E5111E43B143003868D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2E1E5111E43B143003868D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1E5101E43B143003868D2 /* CustomFontProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E1E5121E43B143003868D2 /* CustomFontProject */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1E5281E43B68D003868D2 /* fonts */,
+				B2E1E5251E43B411003868D2 /* View */,
+				B2E1E5131E43B144003868D2 /* AppDelegate.swift */,
+				B2E1E5151E43B144003868D2 /* ViewController.swift */,
+				B2E1E5171E43B144003868D2 /* Main.storyboard */,
+				B2E1E51A1E43B144003868D2 /* Assets.xcassets */,
+				B2E1E51C1E43B144003868D2 /* LaunchScreen.storyboard */,
+				B2E1E51F1E43B144003868D2 /* Info.plist */,
+			);
+			path = CustomFontProject;
+			sourceTree = "<group>";
+		};
+		B2E1E5251E43B411003868D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1E5261E43B422003868D2 /* CustomFontLabel.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B2E1E5281E43B68D003868D2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1E5391E43B767003868D2 /* Barrio-Regular.ttf */,
+				B2E1E5291E43B74E003868D2 /* Sansita-Black.ttf */,
+				B2E1E52A1E43B74E003868D2 /* Sansita-BlackItalic.ttf */,
+				B2E1E52B1E43B74E003868D2 /* Sansita-Bold.ttf */,
+				B2E1E52C1E43B74E003868D2 /* Sansita-BoldItalic.ttf */,
+				B2E1E52D1E43B74E003868D2 /* Sansita-ExtraBold.ttf */,
+				B2E1E52E1E43B74E003868D2 /* Sansita-ExtraBoldItalic.ttf */,
+				B2E1E52F1E43B74E003868D2 /* Sansita-Italic.ttf */,
+				B2E1E5301E43B74E003868D2 /* Sansita-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2E1E50F1E43B143003868D2 /* CustomFontProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E1E5221E43B144003868D2 /* Build configuration list for PBXNativeTarget "CustomFontProject" */;
+			buildPhases = (
+				B2E1E50C1E43B143003868D2 /* Sources */,
+				B2E1E50D1E43B143003868D2 /* Frameworks */,
+				B2E1E50E1E43B143003868D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomFontProject;
+			productName = CustomFontProject;
+			productReference = B2E1E5101E43B143003868D2 /* CustomFontProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2E1E5081E43B143003868D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xcoder.solutions;
+				TargetAttributes = {
+					B2E1E50F1E43B143003868D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B2E1E50B1E43B143003868D2 /* Build configuration list for PBXProject "CustomFontProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2E1E5071E43B143003868D2;
+			productRefGroup = B2E1E5111E43B143003868D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2E1E50F1E43B143003868D2 /* CustomFontProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2E1E50E1E43B143003868D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E1E5341E43B74E003868D2 /* Sansita-BoldItalic.ttf in Resources */,
+				B2E1E5361E43B74E003868D2 /* Sansita-ExtraBoldItalic.ttf in Resources */,
+				B2E1E5371E43B74E003868D2 /* Sansita-Italic.ttf in Resources */,
+				B2E1E51E1E43B144003868D2 /* LaunchScreen.storyboard in Resources */,
+				B2E1E53A1E43B77A003868D2 /* Barrio-Regular.ttf in Resources */,
+				B2E1E5321E43B74E003868D2 /* Sansita-BlackItalic.ttf in Resources */,
+				B2E1E51B1E43B144003868D2 /* Assets.xcassets in Resources */,
+				B2E1E5331E43B74E003868D2 /* Sansita-Bold.ttf in Resources */,
+				B2E1E5311E43B74E003868D2 /* Sansita-Black.ttf in Resources */,
+				B2E1E5351E43B74E003868D2 /* Sansita-ExtraBold.ttf in Resources */,
+				B2E1E5191E43B144003868D2 /* Main.storyboard in Resources */,
+				B2E1E5381E43B74E003868D2 /* Sansita-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2E1E50C1E43B143003868D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E1E5161E43B144003868D2 /* ViewController.swift in Sources */,
+				B2E1E5271E43B422003868D2 /* CustomFontLabel.swift in Sources */,
+				B2E1E5141E43B144003868D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2E1E5171E43B144003868D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E1E5181E43B144003868D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2E1E51C1E43B144003868D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E1E51D1E43B144003868D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2E1E5201E43B144003868D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2E1E5211E43B144003868D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2E1E5231E43B144003868D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomFontProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.CustomFontProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2E1E5241E43B144003868D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomFontProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.CustomFontProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2E1E50B1E43B143003868D2 /* Build configuration list for PBXProject "CustomFontProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E1E5201E43B144003868D2 /* Debug */,
+				B2E1E5211E43B144003868D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E1E5221E43B144003868D2 /* Build configuration list for PBXNativeTarget "CustomFontProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E1E5231E43B144003868D2 /* Debug */,
+				B2E1E5241E43B144003868D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2E1E5081E43B143003868D2 /* Project object */;
+}

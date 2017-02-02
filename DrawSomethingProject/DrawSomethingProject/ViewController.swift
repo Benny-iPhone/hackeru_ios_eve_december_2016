@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
     @IBOutlet weak var drawView: DrawSomethingView!
     
@@ -32,6 +32,17 @@ class ViewController: UIViewController {
         drawView.strokeColor = .black
     }
     
+    @IBAction func shareAction(_ sender: Any) {
+        
+        let image = drawView.asImage()
+        
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        present(controller, animated: true, completion: nil)
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,8 +53,34 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nextVC = segue.destination as? ColorViewController{
+            nextVC.color = drawView.strokeColor
+            nextVC.delegate = self
+        }
+    }
+    
+    
 }
+
+
+extension ViewController : ColorViewControllerDelegate{
+    func colorViewController(_ controller: ColorViewController, didSelectColor color: UIColor?) {
+        if let color = color{
+            drawView.strokeColor = color
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

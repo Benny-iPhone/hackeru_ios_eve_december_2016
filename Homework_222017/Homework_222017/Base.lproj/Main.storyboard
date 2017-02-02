@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_222017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="האם לצאת להפסקה?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-yx-DQj" customClass="HeaderLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="117" y="36" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="נגד" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOX-Op-U2x" customClass="SubHeaderLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="16" y="65" width="21.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="בעד" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edB-Vk-Egz" customClass="SubHeaderLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="332" y="65" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="סלביק" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t5-xl-eMi" customClass="RegularLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="318" y="110" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="יבגני" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3h-vp-5Of" customClass="RegularLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="328" y="139" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הגר" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-zu-Tkm" customClass="RegularLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="16" y="110" width="26" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הילה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgR-tv-64M" customClass="RegularLabel" customModule="Homework_222017" customModuleProvider="target">
+                                <rect key="frame" x="326" y="168" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xOX-Op-U2x" firstAttribute="centerY" secondItem="edB-Vk-Egz" secondAttribute="centerY" id="7Z8-ls-i3v"/>
+                            <constraint firstItem="qhU-zu-Tkm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="8qC-uI-Icg"/>
+                            <constraint firstItem="LgR-tv-64M" firstAttribute="trailing" secondItem="f3h-vp-5Of" secondAttribute="trailing" id="FGw-nK-9z0"/>
+                            <constraint firstItem="LgR-tv-64M" firstAttribute="top" secondItem="f3h-vp-5Of" secondAttribute="bottom" constant="8" id="G5k-jZ-4rM"/>
+                            <constraint firstItem="edB-Vk-Egz" firstAttribute="top" secondItem="8mz-yx-DQj" secondAttribute="bottom" constant="8" id="K6e-Av-iK9"/>
+                            <constraint firstItem="xOX-Op-U2x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Kn6-FP-3qJ"/>
+                            <constraint firstItem="2t5-xl-eMi" firstAttribute="top" secondItem="edB-Vk-Egz" secondAttribute="bottom" constant="24" id="Ks1-Gf-gwD"/>
+                            <constraint firstItem="f3h-vp-5Of" firstAttribute="top" secondItem="2t5-xl-eMi" secondAttribute="bottom" constant="8" id="Slu-7A-aIE"/>
+                            <constraint firstAttribute="trailing" secondItem="edB-Vk-Egz" secondAttribute="trailing" constant="16" id="VQV-ZM-zXf"/>
+                            <constraint firstItem="8mz-yx-DQj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="by3-27-61w"/>
+                            <constraint firstItem="8mz-yx-DQj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eLU-BC-rsj"/>
+                            <constraint firstItem="qhU-zu-Tkm" firstAttribute="top" secondItem="xOX-Op-U2x" secondAttribute="bottom" constant="24" id="q9k-EI-SyM"/>
+                            <constraint firstItem="2t5-xl-eMi" firstAttribute="trailing" secondItem="edB-Vk-Egz" secondAttribute="trailing" id="w1G-CA-vfY"/>
+                            <constraint firstItem="f3h-vp-5Of" firstAttribute="trailing" secondItem="2t5-xl-eMi" secondAttribute="trailing" id="zrq-qp-EMC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

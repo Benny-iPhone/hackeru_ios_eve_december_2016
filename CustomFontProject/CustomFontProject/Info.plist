@@ -28,8 +28,18 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>I wiill jennider laurence you</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Barrio-Regular.ttf</string>
+		<string>Sansita-Black.ttf</string>
+		<string>Sansita-BlackItalic.ttf</string>
+		<string>Sansita-Bold.ttf</string>
+		<string>Sansita-BoldItalic.ttf</string>
+		<string>Sansita-ExtraBold.ttf</string>
+		<string>Sansita-ExtraBoldItalic.ttf</string>
+		<string>Sansita-Italic.ttf</string>
+		<string>Sansita-Regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

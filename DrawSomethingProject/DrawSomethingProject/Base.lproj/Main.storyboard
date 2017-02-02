@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dt1-5P-ykI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yaw-c3-jID"/>
                                     <barButtonItem style="plain" id="mAH-3z-Wfl">
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" id="Aw0-a5-s4P">
-                                            <rect key="frame" x="75" y="7" width="118" height="31"/>
+                                            <rect key="frame" x="84" y="7" width="118" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WrI-UH-VAa"/>
@@ -40,27 +40,21 @@
                                         </slider>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="msI-fd-qZv"/>
-                                    <barButtonItem title="Red" id="RAj-48-Mzm">
-                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <barButtonItem title="color" id="mGN-MY-Tq8">
                                         <connections>
-                                            <action selector="redAction:" destination="BYZ-38-t0r" id="8lT-rn-GVm"/>
+                                            <segue destination="PNM-Fr-M6l" kind="show" id="VX1-Pl-zMa"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Blue" id="6Ot-Kh-i3q">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Z1m-Da-m3b"/>
+                                    <barButtonItem systemItem="action" id="UOV-Ay-cvk">
                                         <connections>
-                                            <action selector="blueAction:" destination="BYZ-38-t0r" id="1sy-gH-Ktf"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Black" id="fhj-Rn-8UL">
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <action selector="blackAction:" destination="BYZ-38-t0r" id="JAU-w3-LZ0"/>
+                                            <action selector="shareAction:" destination="BYZ-38-t0r" id="HGL-M9-6cp"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-3k-on7" customClass="DrawSomethingView" customModule="DrawSomethingProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
@@ -80,12 +74,68 @@
                             <constraint firstItem="zWH-3k-on7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uHC-OH-bHO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XA2-h3-4rZ"/>
                     <connections>
                         <outlet property="drawView" destination="zWH-3k-on7" id="MII-3v-NPB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1220" y="793"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="4xA-MO-Yk3">
+            <objects>
+                <viewController id="PNM-Fr-M6l" customClass="ColorViewController" customModule="DrawSomethingProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AxD-fK-EAb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PvF-5j-VWw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SaV-fC-dt4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-dm-YgX" customClass="HRColorPickerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="colorPickerAction:" destination="PNM-Fr-M6l" eventType="valueChanged" id="Bkh-xx-Py7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PvF-5j-VWw" firstAttribute="top" secondItem="gGF-dm-YgX" secondAttribute="bottom" id="759-Fj-3sq"/>
+                            <constraint firstItem="gGF-dm-YgX" firstAttribute="top" secondItem="AxD-fK-EAb" secondAttribute="bottom" id="9O0-sg-CnN"/>
+                            <constraint firstItem="gGF-dm-YgX" firstAttribute="leading" secondItem="SaV-fC-dt4" secondAttribute="leading" id="Rg8-Q1-oF9"/>
+                            <constraint firstAttribute="trailing" secondItem="gGF-dm-YgX" secondAttribute="trailing" id="cCh-VM-RWq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorPickerView" destination="gGF-dm-YgX" id="l7D-a3-rbj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X3U-D9-l6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015" y="793"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EcR-or-sXD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dt1-5P-ykI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xqh-k9-cS8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="05d-wN-Waw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uu2-Bp-4tI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="792.95352323838085"/>
         </scene>
     </scenes>
 </document>
