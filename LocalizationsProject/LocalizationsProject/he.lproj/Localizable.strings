@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  LocalizationsProject
+
+  Created by Benny Davidovitz on 06/02/2017.
+  Copyright © 2017 xcoder.solutions. All rights reserved.
+*/
+
+"key" = "ערך";
+"hello_world" = "שלום עולם";
+"test" = "ניסיון";
+"label2" = "תווית 2";
