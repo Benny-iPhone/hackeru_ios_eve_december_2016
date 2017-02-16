@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageViewProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icecream" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-v1-oYb">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1l8-q0-DHW"/>
+                                    <constraint firstAttribute="height" constant="240" id="wEw-kD-rko"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icecream" translatesAutoresizingMaskIntoConstraints="NO" id="x7X-p1-mUs">
+                                <rect key="frame" x="0.0" y="28" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trump" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-V8-Xx0" customClass="RoundImageView" customModule="ImageViewProject" customModuleProvider="target">
+                                <rect key="frame" x="295" y="28" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked_checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="82B-wA-xAG" customClass="CheckboxImageView" customModule="ImageViewProject" customModuleProvider="target">
+                                <rect key="frame" x="16" y="626" width="25" height="25"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept the terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ne-Ua-puF">
+                                <rect key="frame" x="49" y="628" width="183.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x7X-p1-mUs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0wa-D6-zk8"/>
+                            <constraint firstItem="x7X-p1-mUs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="40C-8O-JfT"/>
+                            <constraint firstItem="PP6-v1-oYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Clq-Ld-8lu"/>
+                            <constraint firstAttribute="trailing" secondItem="TL3-V8-Xx0" secondAttribute="trailing" id="GuA-B4-kUk"/>
+                            <constraint firstItem="1Ne-Ua-puF" firstAttribute="centerY" secondItem="82B-wA-xAG" secondAttribute="centerY" id="UYA-XI-3Ef"/>
+                            <constraint firstItem="TL3-V8-Xx0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Xt1-pA-uzR"/>
+                            <constraint firstItem="82B-wA-xAG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="bM4-lC-x31"/>
+                            <constraint firstItem="1Ne-Ua-puF" firstAttribute="leading" secondItem="82B-wA-xAG" secondAttribute="trailing" constant="8" id="g5r-FT-CkY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="82B-wA-xAG" secondAttribute="bottom" constant="16" id="mC1-99-NEQ"/>
+                            <constraint firstItem="PP6-v1-oYb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ofN-9T-BaF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkbox" destination="82B-wA-xAG" id="Fn9-UQ-kUd"/>
+                        <outlet property="imageView" destination="PP6-v1-oYb" id="8wV-lO-C38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icecream" width="100" height="100"/>
+        <image name="trump" width="80" height="80"/>
+        <image name="unchecked_checkbox" width="25" height="25"/>
+    </resources>
+</document>

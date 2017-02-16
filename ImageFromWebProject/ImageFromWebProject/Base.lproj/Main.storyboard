@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageFromWebProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDD-xW-sOq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="RoG-aV-7mz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI0-rp-Ly4">
+                                <rect key="frame" x="131" y="344" width="112" height="30"/>
+                                <state key="normal" title="download image"/>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hn8-8k-sQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6u-cw-pUd">
+                                <rect key="frame" x="125" y="398" width="125" height="30"/>
+                                <state key="normal" title="download image 2"/>
+                                <connections>
+                                    <action selector="downloadAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Dm-gY-Wwn"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Vpb-r3-Xaa">
+                                <rect key="frame" x="169" y="152" width="37" height="37"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IjJ-RL-KzI">
+                                <rect key="frame" x="8" y="328.5" width="359" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uI0-rp-Ly4" firstAttribute="centerX" secondItem="VDD-xW-sOq" secondAttribute="centerX" id="Bga-It-vRD"/>
+                            <constraint firstItem="VDD-xW-sOq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ekc-OF-7ik"/>
+                            <constraint firstItem="V6u-cw-pUd" firstAttribute="top" secondItem="uI0-rp-Ly4" secondAttribute="bottom" constant="24" id="G2U-xX-xmP"/>
+                            <constraint firstAttribute="trailing" secondItem="IjJ-RL-KzI" secondAttribute="trailing" constant="8" id="ICA-fT-JEK"/>
+                            <constraint firstItem="uI0-rp-Ly4" firstAttribute="top" secondItem="VDD-xW-sOq" secondAttribute="bottom" constant="24" id="aWX-Jv-AEr"/>
+                            <constraint firstAttribute="trailing" secondItem="VDD-xW-sOq" secondAttribute="trailing" id="cpQ-nB-Qwz"/>
+                            <constraint firstItem="IjJ-RL-KzI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="eBt-Sh-TdQ"/>
+                            <constraint firstItem="Vpb-r3-Xaa" firstAttribute="centerY" secondItem="VDD-xW-sOq" secondAttribute="centerY" id="ehv-7X-w2Q"/>
+                            <constraint firstItem="IjJ-RL-KzI" firstAttribute="top" secondItem="VDD-xW-sOq" secondAttribute="bottom" constant="8" id="fN8-YW-hJV"/>
+                            <constraint firstItem="VDD-xW-sOq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lzj-iP-biM"/>
+                            <constraint firstItem="V6u-cw-pUd" firstAttribute="centerX" secondItem="uI0-rp-Ly4" secondAttribute="centerX" id="r1K-rg-Zo8"/>
+                            <constraint firstItem="Vpb-r3-Xaa" firstAttribute="centerX" secondItem="VDD-xW-sOq" secondAttribute="centerX" id="rBx-ay-e7D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VDD-xW-sOq" id="7Ho-xQ-AuD"/>
+                        <outlet property="indicator" destination="Vpb-r3-Xaa" id="7ZJ-8B-Kg6"/>
+                        <outlet property="progressView" destination="IjJ-RL-KzI" id="ie1-sl-49U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
