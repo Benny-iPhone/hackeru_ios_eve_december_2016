@@ -16,6 +16,7 @@
 		B29D72541E5621CA009B53CF /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D72531E5621CA009B53CF /* AppTextField.swift */; };
 		B29D72561E562B4C009B53CF /* BirthdateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D72551E562B4C009B53CF /* BirthdateTextField.swift */; };
 		B29D72581E562CDA009B53CF /* GenderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D72571E562CDA009B53CF /* GenderTextField.swift */; };
+		B2DA30421E5B6DD000750A74 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA30411E5B6DD000750A74 /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B29D72531E5621CA009B53CF /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		B29D72551E562B4C009B53CF /* BirthdateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdateTextField.swift; sourceTree = "<group>"; };
 		B29D72571E562CDA009B53CF /* GenderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderTextField.swift; sourceTree = "<group>"; };
+		B2DA30411E5B6DD000750A74 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				B29D72531E5621CA009B53CF /* AppTextField.swift */,
 				B29D72551E562B4C009B53CF /* BirthdateTextField.swift */,
 				B29D72571E562CDA009B53CF /* GenderTextField.swift */,
+				B2DA30411E5B6DD000750A74 /* PasswordTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				B29D72411E56096F009B53CF /* ViewController.swift in Sources */,
 				B29D723F1E56096F009B53CF /* AppDelegate.swift in Sources */,
+				B2DA30421E5B6DD000750A74 /* PasswordTextField.swift in Sources */,
 				B29D72521E561B7A009B53CF /* Utils.swift in Sources */,
 				B29D72561E562B4C009B53CF /* BirthdateTextField.swift in Sources */,
 				B29D72581E562CDA009B53CF /* GenderTextField.swift in Sources */,
@@ -283,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Form/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.Form;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Form/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.Form;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,6 +327,7 @@
 				B29D724F1E56096F009B53CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

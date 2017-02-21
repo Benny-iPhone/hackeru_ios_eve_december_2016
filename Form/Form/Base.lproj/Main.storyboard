@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,6 +30,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="hHW-S0-TQz"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Dsp-xh-Dwt"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-VV-Uh5" customClass="AppTextField" customModule="Form" customModuleProvider="target">
@@ -40,6 +40,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="TJH-AW-sbf"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="HM7-2C-GC9"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birth Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wbe-1V-zq9" customClass="BirthdateTextField" customModule="Form" customModuleProvider="target">
@@ -49,6 +50,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="dbw-Pt-LFY"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="bTz-I2-Kqi"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qnd-4t-rSH" customClass="AppTextField" customModule="Form" customModuleProvider="target">
@@ -58,6 +60,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="5Sa-4H-Tj5"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Vth-th-JmR"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pU9-CC-Mra" customClass="AppTextField" customModule="Form" customModuleProvider="target">
@@ -67,6 +70,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="gtT-Bl-M0J"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="zfp-SS-nin"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-fs-R1H" customClass="AppTextField" customModule="Form" customModuleProvider="target">
@@ -76,6 +80,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Ldr-a5-UzF"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="asG-pY-eN9"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5M-sP-Tns" customClass="GenderTextField" customModule="Form" customModuleProvider="target">
@@ -85,15 +90,17 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="SAq-gQ-U3V"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="vf6-nq-BF2"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-yd-dcz" customClass="AppTextField" customModule="Form" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hlA-yd-dcz" customClass="PasswordTextField" customModule="Form" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="266" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="didEndOnExitAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="uLH-Nk-RqG"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="J0L-6m-f9X"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -123,6 +130,7 @@
                     <navigationItem key="navigationItem" title="Form" id="QOd-LH-Kf5"/>
                     <connections>
                         <outlet property="firstnameTextField" destination="SYq-ix-WZ3" id="e19-q4-g5k"/>
+                        <outlet property="stackTopLayout" destination="k4V-QV-ihz" id="WPC-N0-URt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

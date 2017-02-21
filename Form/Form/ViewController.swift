@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var stackTopLayout: NSLayoutConstraint!
 
     @IBOutlet weak var firstnameTextField: UITextField!
     
@@ -16,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //open keyboard
         firstnameTextField.becomeFirstResponder()
+        //firstnameTextField.delegate = self
     }
     
     
@@ -32,14 +35,40 @@ class ViewController: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         _ = self.view.hideKeyboard()
+        moveTo(c: 8)
     }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func moveTo(c : CGFloat){
+        stackTopLayout.constant = c
+        
+        UIView.animate(withDuration: 0.3) {
+            //refresh constraint
+            self.view.layoutIfNeeded()
+            //self.view.layoutSubviews()
+        }
+        
     }
-
-
+    
 }
+
+extension ViewController : UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let c = 8 - textField.frame.origin.y
+        moveTo(c: c)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
