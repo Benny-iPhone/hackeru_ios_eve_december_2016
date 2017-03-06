@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gul-YW-ldF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlertProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-QO-TJ7">
+                                <rect key="frame" x="145" y="28" width="84" height="30"/>
+                                <state key="normal" title="Simple Alert"/>
+                                <connections>
+                                    <action selector="simpleAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjY-1f-mMg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ib-ls-fPV">
+                                <rect key="frame" x="99" y="98" width="176" height="30"/>
+                                <state key="normal" title="Username password alert"/>
+                                <connections>
+                                    <action selector="usernamePasswordAlertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U84-5h-Xv4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8ib-ls-fPV" firstAttribute="top" secondItem="hVT-QO-TJ7" secondAttribute="bottom" constant="40" id="BV8-RD-Z1t"/>
+                            <constraint firstItem="hVT-QO-TJ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ell-LT-9MC"/>
+                            <constraint firstItem="8ib-ls-fPV" firstAttribute="centerX" secondItem="hVT-QO-TJ7" secondAttribute="centerX" id="Oer-cp-xRt"/>
+                            <constraint firstItem="hVT-QO-TJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOH-ls-JIn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="PRX-hR-kSc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-415"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="C5j-a1-oBf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gul-YW-ldF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="PmK-Jb-Ekw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rX7-S5-sma"/>
+                        <segue destination="eQ9-cq-WTt" kind="relationship" relationship="viewControllers" id="47A-av-kcv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2H-Nc-urM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="u4F-av-jBE">
+            <objects>
+                <viewController id="eQ9-cq-WTt" customClass="ImageSelectorViewController" customModule="AlertProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nkb-Va-Nto"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iqq-sp-ZtU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yfr-os-iC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Da9-6E-M4V">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2ZN-lc-uf7"/>
+                                    <constraint firstAttribute="width" constant="200" id="zmu-Ud-qay"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QlQ-dl-hEF" appends="YES" id="uP5-Fg-J7e"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Da9-6E-M4V" firstAttribute="centerY" secondItem="Yfr-os-iC3" secondAttribute="centerY" id="U35-pf-AW2"/>
+                            <constraint firstItem="Da9-6E-M4V" firstAttribute="centerX" secondItem="Yfr-os-iC3" secondAttribute="centerX" id="oBr-FH-lA3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Dum-na-mUb"/>
+                    <connections>
+                        <outlet property="imageView" destination="Da9-6E-M4V" id="N6f-vp-cR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIS-kR-0HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QlQ-dl-hEF">
+                    <connections>
+                        <action selector="tapAction:" destination="eQ9-cq-WTt" id="CmP-Ca-t1U"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="953" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="256" height="253"/>
+    </resources>
+</document>
