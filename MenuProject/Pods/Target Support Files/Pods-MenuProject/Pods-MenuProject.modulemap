@@ -1,0 +1,6 @@
+framework module Pods_MenuProject {
+  umbrella header "Pods-MenuProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

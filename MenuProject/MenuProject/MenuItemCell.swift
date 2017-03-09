@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MenuItemCell: UITableViewCell {
 
@@ -29,6 +30,12 @@ class MenuItemCell: UITableViewCell {
         priceLabel.text = formatter.string(from: price)
         
         //image
+        if let url = item.url{
+            itemImageView.sd_setImage(with: url)
+        } else {
+            itemImageView.image = nil
+            itemImageView.sd_cancelCurrentImageLoad()
+        }
     }
     
 }
