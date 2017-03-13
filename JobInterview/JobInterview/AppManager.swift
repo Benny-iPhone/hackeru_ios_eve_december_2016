@@ -41,6 +41,40 @@ class AppManager: NSObject {
     }
     
     
+    func getDetails(of item : OMDBItem, completion : @escaping (_ error : Error?, _ item : OMDBItem?) -> Void){
+        //create url string with get query
+        let urlString = baseURL + "?i=" + item.imdbID
+        //create http request object
+        var request = URLRequest(url: URL(string: urlString)!)
+        request.httpMethod = "GET"
+        
+        //call the server with the request, get result in completion block
+        URLSession.shared.dataTask(with: request) { (data, res, err) in
+            //make sure we have data
+            guard let data = data else{
+                completion(err, nil)
+                return
+            }
+            //parse to json object (dictionary)
+            guard
+                let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers),
+                let dict = json as? [String:Any] else{
+                    
+                    let error = NSError(domain: "com.myapp", code: 3, userInfo: [NSLocalizedDescriptionKey:"invalid data format"])
+                    completion(error as Error, nil)
+                    return
+            }
+            
+            //populate item with dict
+            item.populate(with: dict)
+            //notify completion, on main thread
+            DispatchQueue.main.async {
+                completion(nil, item)
+            }
+            
+        }.resume()
+    }
+    
 }
 
 

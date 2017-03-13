@@ -15,6 +15,15 @@ class OMDBItem: NSObject {
     let type : String?
     let posterURL : URL?
     
+    var plot : String?
+    var rating : Double?
+    
+    func populate(with dict : [String:Any]){
+        self.plot = dict["Plot"] as? String
+        if let str = dict["imdbRating"] as? String{
+            self.rating = Double(str)
+        }
+    }
     
     init(_ dict : [String:Any]) {
         title = dict["Title"] as? String

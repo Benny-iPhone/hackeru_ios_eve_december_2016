@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6DACE56DF74EE2BC57EB495E /* Pods_JobInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FD824368016C29BA5A2DE5 /* Pods_JobInterview.framework */; };
+		B2E396EC1E771F9700B507F9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E396EB1E771F9700B507F9 /* DetailsViewController.swift */; };
 		B2E6413B1E71B76300BB91D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6413A1E71B76300BB91D6 /* AppDelegate.swift */; };
 		B2E6413D1E71B76300BB91D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6413C1E71B76300BB91D6 /* ViewController.swift */; };
 		B2E641401E71B76300BB91D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E6413E1E71B76300BB91D6 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		396B4D799B43B0CFB5403F72 /* Pods-JobInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobInterview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JobInterview/Pods-JobInterview.debug.xcconfig"; sourceTree = "<group>"; };
 		3BD13ADB64FE2AAE5B0F5D04 /* Pods-JobInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobInterview.release.xcconfig"; path = "Pods/Target Support Files/Pods-JobInterview/Pods-JobInterview.release.xcconfig"; sourceTree = "<group>"; };
 		89FD824368016C29BA5A2DE5 /* Pods_JobInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E396EB1E771F9700B507F9 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B2E641371E71B76300BB91D6 /* JobInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E6413A1E71B76300BB91D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E6413C1E71B76300BB91D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E641551E71CD4000BB91D6 /* OMDBTableViewController.swift */,
+				B2E396EB1E771F9700B507F9 /* DetailsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				B2E641561E71CD4000BB91D6 /* OMDBTableViewController.swift in Sources */,
 				B2E6413D1E71B76300BB91D6 /* ViewController.swift in Sources */,
 				B2E6413B1E71B76300BB91D6 /* AppDelegate.swift in Sources */,
+				B2E396EC1E771F9700B507F9 /* DetailsViewController.swift in Sources */,
 				B2E641541E71CD3500BB91D6 /* OMDBItemCell.swift in Sources */,
 				B2E641501E71BE7500BB91D6 /* AppManager.swift in Sources */,
 			);
