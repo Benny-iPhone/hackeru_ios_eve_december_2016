@@ -9,9 +9,11 @@
 import UIKit
 import CCBottomRefreshControl
 
-class OMDBTableViewController: UITableViewController , UISearchBarDelegate{
+class OMDBTableViewController: UIViewController , UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate{
 
+    @IBOutlet weak var tableView : UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    var refreshControl : UIRefreshControl?
     var tableArray : [OMDBItem] = []
     var page = 1
     
@@ -20,11 +22,13 @@ class OMDBTableViewController: UITableViewController , UISearchBarDelegate{
 
         self.refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
+        tableView.addSubview(refreshControl!)
         
         let rControl = UIRefreshControl()
         rControl.triggerVerticalOffset = 100
         rControl.addTarget(self, action: #selector(nextPageAction), for: .valueChanged)
         self.tableView.bottomRefreshControl = rControl
+ 
     }
     
     func nextPageAction(){
@@ -51,7 +55,7 @@ class OMDBTableViewController: UITableViewController , UISearchBarDelegate{
         
         AppManager.manager.search(by: name, page : page) { (err, arr) in
             guard let arr = arr else {
-                print(err)
+                print(err ?? "")
                 handleError()
                 return
             }
@@ -94,12 +98,12 @@ class OMDBTableViewController: UITableViewController , UISearchBarDelegate{
     
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableArray.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! OMDBItemCell
 
         // Configure the cell...

@@ -159,6 +159,7 @@
 				TargetAttributes = {
 					B2E641361E71B76300BB91D6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J7YZTH9Z4F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -374,6 +375,7 @@
 			baseConfigurationReference = 396B4D799B43B0CFB5403F72 /* Pods-JobInterview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = JobInterview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.JobInterview;
@@ -387,6 +389,7 @@
 			baseConfigurationReference = 3BD13ADB64FE2AAE5B0F5D04 /* Pods-JobInterview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J7YZTH9Z4F;
 				INFOPLIST_FILE = JobInterview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoder.solutions.JobInterview;
