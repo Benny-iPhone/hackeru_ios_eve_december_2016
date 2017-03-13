@@ -16,6 +16,7 @@ class OMDBTableViewController: UIViewController , UISearchBarDelegate, UITableVi
     var refreshControl : UIRefreshControl?
     var tableArray : [OMDBItem] = []
     var page = 1
+    var name : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +29,21 @@ class OMDBTableViewController: UIViewController , UISearchBarDelegate, UITableVi
         rControl.triggerVerticalOffset = 100
         rControl.addTarget(self, action: #selector(nextPageAction), for: .valueChanged)
         self.tableView.bottomRefreshControl = rControl
- 
+        
+        //navigationItem.title = "Ofer"
+
     }
     
     func nextPageAction(){
-        reloadData(with: searchBar.text)
+        reloadData()
     }
     
     func refreshAction(){
         self.page = 1
-        reloadData(with: searchBar.text)
+        reloadData()
     }
 
-    func reloadData(with name : String?){
+    func reloadData(){
         func handleError(){
             self.refreshControl?.endRefreshing()
             self.tableView.bottomRefreshControl?.endRefreshing()
@@ -60,11 +63,17 @@ class OMDBTableViewController: UIViewController , UISearchBarDelegate, UITableVi
                 return
             }
             
-            guard !arr.isEmpty else {
+            if arr.isEmpty && self.page == 1{
                 print("empty array")
                 handleError()
                 return
             }
+            /*
+            guard !arr.isEmpty else {
+                print("empty array")
+                handleError()
+                return
+            }*/
             
             self.refreshControl?.endRefreshing()
             self.tableView.bottomRefreshControl?.endRefreshing()
@@ -86,12 +95,14 @@ class OMDBTableViewController: UIViewController , UISearchBarDelegate, UITableVi
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.page = 1
-        reloadData(with: searchBar.text)
+        name = searchBar.text
+        reloadData()
         searchBar.resignFirstResponder()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        reloadData(with: nil)
+        name = nil
+        reloadData()
         searchBar.resignFirstResponder()
     }
     

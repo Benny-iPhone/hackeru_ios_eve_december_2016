@@ -15,6 +15,7 @@ class OMDBItem: NSObject {
     let type : String?
     let posterURL : URL?
     
+    
     init(_ dict : [String:Any]) {
         title = dict["Title"] as? String
         year = dict["Year"] as? String
@@ -29,6 +30,7 @@ class OMDBItem: NSObject {
         
         super.init()
     }
+    
 }
 
 

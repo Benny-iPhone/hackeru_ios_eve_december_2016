@@ -39,7 +39,24 @@ class AppManager: NSObject {
         }
         
     }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
