@@ -15,13 +15,13 @@ class AppManager: NSObject {
     let baseURL = "http://www.omdbapi.com/"
     
     func search(by name : String, page : Int,
-                completion : @escaping (Error?,[OMDBItem]?)->Void){
+                completion : @escaping (Error?,[OMDBItem]?,Int?)->Void){
         
         let params : [String:Any] = ["s":name,"page":page]
         
         Alamofire.request(baseURL, method: .get, parameters: params).responseJSON { res in
             guard let value = res.result.value as? [String:Any] else {
-                completion(res.result.error, nil)
+                completion(res.result.error, nil, nil)
                 return
             }
             
@@ -33,7 +33,9 @@ class AppManager: NSObject {
                 finalArray.append(item)
             }
             
-            completion(nil,finalArray)
+            let total = Int(value["totalResults"] as? String ?? "0")
+            
+            completion(nil,finalArray,total)
             
             
         }

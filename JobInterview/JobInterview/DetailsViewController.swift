@@ -7,20 +7,32 @@
 //
 
 import UIKit
+import SDWebImage
+import Cosmos
 
 class DetailsViewController: UIViewController {
     
     var item : OMDBItem!
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var plotTextView: UITextView!
+    @IBOutlet weak var ratingView: CosmosView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //config UI
         navigationItem.title = item.title
-        
         plotTextView.text = item.plot
+        
+        ratingView.settings.updateOnTouch = false
+        ratingView.settings.fillMode = .precise
+        
+        ratingView.rating = item.rating ?? 0
+        
+        if let url = item.posterURL{
+            imageView.sd_setImage(with: url)
+        }
         
         if item.plot != nil{
             //data alreay fetched
@@ -30,6 +42,7 @@ class DetailsViewController: UIViewController {
         //fetch details data
         AppManager.manager.getDetails(of: item) { (err, item) in
             self.plotTextView.text = item?.plot
+            self.ratingView.rating = item?.rating ?? 0
         }
         
     }

@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cosmos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JobInterview.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,6 +32,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4FDC533A4360A68ABDCE852F04B30927</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>724093F90BB1B96CD624A10A6B74EAA3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7C16A95454B5198F0D14923374C025F8</key>
 		<dict>
 			<key>primary</key>
@@ -37,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1B79CAC9A01D2E37EE52ED8522DECF7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EDCF67B99A116AE5EFC2FC9C67370355</key>
+		<key>B895047CF38272C89D1EDEC18BF43FAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

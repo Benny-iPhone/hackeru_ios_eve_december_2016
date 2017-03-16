@@ -9,5 +9,6 @@ target 'JobInterview' do
 pod 'SDWebImage', '~>3.8'
 pod 'Alamofire', '~> 4.4'
 pod 'CCBottomRefreshControl'
+pod 'Cosmos', '~> 8.0'
 
 end

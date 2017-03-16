@@ -141,31 +141,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-LY-vyz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-15-Ua5">
                                 <rect key="frame" x="16" y="80" width="343" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0Yc-f4-3z5"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELZ-KO-A17" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="65" y="216" width="245" height="20"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ELZ-KO-A17" firstAttribute="centerX" secondItem="CmR-15-Ua5" secondAttribute="centerX" id="HSU-E0-PEt"/>
+                            <constraint firstItem="vPg-LY-vyz" firstAttribute="top" secondItem="2pl-5d-VIj" secondAttribute="bottom" id="J73-4L-tqY"/>
+                            <constraint firstItem="xwr-WX-eVa" firstAttribute="top" secondItem="vPg-LY-vyz" secondAttribute="bottom" id="MrH-Wz-FJi"/>
+                            <constraint firstItem="vPg-LY-vyz" firstAttribute="leading" secondItem="vpm-eu-pSe" secondAttribute="leading" id="WwE-2j-1kr"/>
                             <constraint firstItem="CmR-15-Ua5" firstAttribute="leading" secondItem="vpm-eu-pSe" secondAttribute="leading" constant="16" id="ZpU-jh-Zlb"/>
                             <constraint firstItem="CmR-15-Ua5" firstAttribute="top" secondItem="2pl-5d-VIj" secondAttribute="bottom" constant="16" id="aC2-yI-zXP"/>
+                            <constraint firstItem="ELZ-KO-A17" firstAttribute="top" secondItem="CmR-15-Ua5" secondAttribute="bottom" constant="8" id="lE9-kd-aR1"/>
+                            <constraint firstAttribute="trailing" secondItem="vPg-LY-vyz" secondAttribute="trailing" id="oJO-Bt-tNt"/>
                             <constraint firstAttribute="trailing" secondItem="CmR-15-Ua5" secondAttribute="trailing" constant="16" id="yNm-UI-GSi"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="vPg-LY-vyz" id="JOG-ff-CSL"/>
                         <outlet property="plotTextView" destination="CmR-15-Ua5" id="EcF-Ey-hdm"/>
+                        <outlet property="ratingView" destination="ELZ-KO-A17" id="c8U-4P-Amv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feM-ZX-Kcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="134"/>
+            <point key="canvasLocation" x="1276" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
