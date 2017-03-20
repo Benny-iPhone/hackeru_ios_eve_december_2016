@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HitList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="HitList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +20,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h4N-Ef-IE1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="type search term" showsCancelButton="YES" id="KAn-Us-819">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="BYZ-38-t0r" id="RpS-f9-Afx"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="iCv-st-iwt" customClass="PersonCell" customModule="HitList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iCv-st-iwt" id="cCW-2L-Wvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מאוד מאוד ארוך" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-Ge-znG">
+                                                    <rect key="frame" x="8" y="11" width="110" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם פרטי" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtE-ug-KeZ">
+                                                    <rect key="frame" x="126" y="11" width="59" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w66-Pj-bZy" customClass="CellSwitch" customModule="HitList" customModuleProvider="target">
+                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="aliveSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="P5C-o3-1Xx"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="w66-Pj-bZy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xtE-ug-KeZ" secondAttribute="trailing" constant="8" id="6no-Ee-erH"/>
+                                                <constraint firstItem="w66-Pj-bZy" firstAttribute="centerY" secondItem="cCW-2L-Wvg" secondAttribute="centerY" id="91f-xa-vtI"/>
+                                                <constraint firstAttribute="trailing" secondItem="w66-Pj-bZy" secondAttribute="trailing" constant="8" id="XDy-B3-bW7"/>
+                                                <constraint firstItem="G6f-Ge-znG" firstAttribute="leading" secondItem="cCW-2L-Wvg" secondAttribute="leading" constant="8" id="lJc-ba-ZJG"/>
+                                                <constraint firstItem="G6f-Ge-znG" firstAttribute="centerY" secondItem="cCW-2L-Wvg" secondAttribute="centerY" id="mB0-ye-NIi"/>
+                                                <constraint firstItem="xtE-ug-KeZ" firstAttribute="leading" secondItem="G6f-Ge-znG" secondAttribute="trailing" constant="8" id="oWm-C4-H0d"/>
+                                                <constraint firstItem="xtE-ug-KeZ" firstAttribute="centerY" secondItem="G6f-Ge-znG" secondAttribute="centerY" id="xmz-Kw-pSi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="aliveSwitch" destination="w66-Pj-bZy" id="vpS-oI-yFt"/>
+                                            <outlet property="firstnameLabel" destination="xtE-ug-KeZ" id="Lzu-gW-V9Q"/>
+                                            <outlet property="lastnameLabel" destination="G6f-Ge-znG" id="qwk-nZ-SD4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hzI-gz-cQl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IW9-sv-RUw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h4N-Ef-IE1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EhC-Tb-0BW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h4N-Ef-IE1" secondAttribute="bottom" id="SaJ-XC-X6f"/>
+                            <constraint firstItem="h4N-Ef-IE1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a3Y-IH-rG2"/>
+                            <constraint firstAttribute="trailing" secondItem="h4N-Ef-IE1" secondAttribute="trailing" id="lGQ-Vg-ah3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fZI-bQ-yzI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ayv-yB-N67">
@@ -29,10 +97,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="h4N-Ef-IE1" id="gQq-jH-BcY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201" y="-544"/>
+            <point key="canvasLocation" x="1200.8" y="-544.67766116941539"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4Pe-f8-ziG">

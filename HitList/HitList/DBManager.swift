@@ -19,6 +19,38 @@ class DBManager: NSObject {
         }
     }
 
+    func fetchPeople(search : String? = nil) -> NSFetchedResultsController<Person>{
+        
+        let request : NSFetchRequest<Person> = Person.fetchRequest()
+        /*
+        let s1 = NSSortDescriptor(key: "", ascending: true) {
+            guard let s1 = $0 as? String, let s2 = $1 as? String else{
+                return .orderedSame
+            }
+            
+            return s1.lowercased() < s2.lowercased() ? .orderedAscending : .orderedDescending
+        }*/
+        
+        request.sortDescriptors = [
+            //NSSortDescriptor(key: "isAlive", ascending: false),
+            NSSortDescriptor(key: "lastname", ascending: true),
+            NSSortDescriptor(key: "firstname", ascending: true)
+        ]
+        
+        if let search = search, !search.isEmpty{
+            request.predicate = NSPredicate(format: "firstname CONTAINS[cd] %@ OR lastname CONTAINS[cd] %@", search,search)
+        }
+        
+        let controller = NSFetchedResultsController(fetchRequest: request,
+                                                    managedObjectContext: context,
+                                                    sectionNameKeyPath: "lastname",
+                                                    cacheName: nil)
+        
+        try? controller.performFetch()
+        
+        return controller
+    }
+    
     // MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentContainer = {

@@ -14,6 +14,8 @@
 		B20461891E7B0CF800C88AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20461881E7B0CF800C88AED /* Assets.xcassets */; };
 		B204618C1E7B0CF800C88AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B204618A1E7B0CF800C88AED /* LaunchScreen.storyboard */; };
 		B20461951E7B0D4800C88AED /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20461941E7B0D4800C88AED /* DBManager.swift */; };
+		B20462311E803FEA00C88AED /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20462301E803FEA00C88AED /* PersonCell.swift */; };
+		B20462331E80536C00C88AED /* CellSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20462321E80536C00C88AED /* CellSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B204618B1E7B0CF800C88AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B204618D1E7B0CF800C88AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20461941E7B0D4800C88AED /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		B20462301E803FEA00C88AED /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		B20462321E80536C00C88AED /* CellSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		B204617D1E7B0CF800C88AED /* HitList */ = {
 			isa = PBXGroup;
 			children = (
+				B204622F1E803FCA00C88AED /* View */,
 				B20461931E7B0D2800C88AED /* Model */,
 				B204617E1E7B0CF800C88AED /* AppDelegate.swift */,
 				B20461801E7B0CF800C88AED /* ViewController.swift */,
@@ -76,6 +81,15 @@
 				B20461941E7B0D4800C88AED /* DBManager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B204622F1E803FCA00C88AED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20462301E803FEA00C88AED /* PersonCell.swift */,
+				B20462321E80536C00C88AED /* CellSwitch.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20461871E7B0CF800C88AED /* HitList.xcdatamodeld in Sources */,
+				B20462331E80536C00C88AED /* CellSwitch.swift in Sources */,
+				B20462311E803FEA00C88AED /* PersonCell.swift in Sources */,
 				B20461811E7B0CF800C88AED /* ViewController.swift in Sources */,
 				B204617F1E7B0CF800C88AED /* AppDelegate.swift in Sources */,
 				B20461951E7B0D4800C88AED /* DBManager.swift in Sources */,
@@ -313,6 +329,7 @@
 				B20461921E7B0CF800C88AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
