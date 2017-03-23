@@ -12,7 +12,7 @@ class PersonCell: UITableViewCell {
 
     @IBOutlet weak var firstnameLabel: UILabel!
     @IBOutlet weak var lastnameLabel: UILabel!
-    @IBOutlet weak var aliveSwitch: CellSwitch!
+    @IBOutlet weak var aliveSwitch: UISwitch!
 
     func configure(with p : Person){
         

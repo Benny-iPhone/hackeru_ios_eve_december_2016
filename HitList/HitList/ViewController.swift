@@ -59,7 +59,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
     }
     
-    @IBAction func aliveSwitchAction(_ sender : CellSwitch){
+    @IBAction func aliveSwitchAction(_ sender : UISwitch){
         guard let indexPath = sender.indexPath else {
             return
         }
@@ -112,7 +112,6 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         let p : Person = controller.object(at: indexPath)
         cell.configure(with: p)
         
-        cell.aliveSwitch.indexPath = indexPath
         //cell.textLabel?.text = p.firstname
         //cell.detailTextLabel?.text = p.lastname
         
@@ -172,11 +171,9 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
             let cell = tableView.cellForRow(at: indexPath!) as? PersonCell
             cell?.configure(with: anObject as! Person)
             
-            cell?.aliveSwitch.indexPath = indexPath
         case .move:
             let cell = tableView.cellForRow(at: indexPath!) as? PersonCell
             cell?.configure(with: anObject as! Person)
-            cell?.aliveSwitch.indexPath = indexPath
             
             tableView.moveRow(at: indexPath!, to: newIndexPath!)
             

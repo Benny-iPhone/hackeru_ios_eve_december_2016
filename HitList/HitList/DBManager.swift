@@ -32,7 +32,7 @@ class DBManager: NSObject {
         }*/
         
         request.sortDescriptors = [
-            //NSSortDescriptor(key: "isAlive", ascending: false),
+            NSSortDescriptor(key: "isAlive", ascending: false),
             NSSortDescriptor(key: "lastname", ascending: true),
             NSSortDescriptor(key: "firstname", ascending: true)
         ]
@@ -43,7 +43,7 @@ class DBManager: NSObject {
         
         let controller = NSFetchedResultsController(fetchRequest: request,
                                                     managedObjectContext: context,
-                                                    sectionNameKeyPath: "lastname",
+                                                    sectionNameKeyPath: "isAlive",
                                                     cacheName: nil)
         
         try? controller.performFetch()
