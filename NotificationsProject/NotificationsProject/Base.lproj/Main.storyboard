@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotificationsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="alert text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ob7-c3-ViB">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="5zk-Yn-Shy">
+                                <rect key="frame" x="0.0" y="74" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="512923717.35064">
+                                    <!--2017-04-03 14:48:37 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-EG-JcV">
+                                <rect key="frame" x="114" y="306" width="147" height="30"/>
+                                <state key="normal" title="Schedule Notification"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrv-uh-03Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5zk-Yn-Shy" firstAttribute="top" secondItem="ob7-c3-ViB" secondAttribute="bottom" constant="16" id="0Tr-5O-dgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="5zk-Yn-Shy" secondAttribute="trailing" id="V4X-ZU-gKw"/>
+                            <constraint firstItem="ob7-c3-ViB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Wah-WD-Nw7"/>
+                            <constraint firstItem="5zk-Yn-Shy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xry-Ot-CiP"/>
+                            <constraint firstItem="Qpo-EG-JcV" firstAttribute="centerX" secondItem="5zk-Yn-Shy" secondAttribute="centerX" id="ZWm-kn-7uB"/>
+                            <constraint firstAttribute="trailing" secondItem="ob7-c3-ViB" secondAttribute="trailing" constant="16" id="bCK-Hh-oFV"/>
+                            <constraint firstItem="ob7-c3-ViB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="nIk-Ic-g1K"/>
+                            <constraint firstItem="Qpo-EG-JcV" firstAttribute="top" secondItem="5zk-Yn-Shy" secondAttribute="bottom" constant="16" id="wgm-Jh-NDZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UPd-Cs-AT5" appends="YES" id="neQ-ZC-Cdq"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="5zk-Yn-Shy" id="XUg-4m-Llo"/>
+                        <outlet property="textField" destination="ob7-c3-ViB" id="xeI-d5-DEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UPd-Cs-AT5">
+                    <connections>
+                        <action selector="tapAction:" destination="BYZ-38-t0r" id="uH7-Qn-WJp"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
