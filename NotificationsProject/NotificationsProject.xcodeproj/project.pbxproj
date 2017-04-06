@@ -14,6 +14,8 @@
 		6DDEB2D61E92952000145F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DDEB2D51E92952000145F3F /* Assets.xcassets */; };
 		6DDEB2D91E92952000145F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DDEB2D71E92952000145F3F /* LaunchScreen.storyboard */; };
 		6DDEB2E11E92A96700145F3F /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6DDEB2E01E92A96700145F3F /* sound.mp3 */; };
+		6DDEB35A1E968CCD00145F3F /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DDEB3591E968CCD00145F3F /* image.jpg */; };
+		6DDEB35D1E968EC600145F3F /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6DDEB35C1E968EC600145F3F /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6DDEB2D81E92952000145F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DDEB2DA1E92952000145F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DDEB2E01E92A96700145F3F /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		6DDEB3591E968CCD00145F3F /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		6DDEB35C1E968EC600145F3F /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +65,23 @@
 				6DDEB2CB1E92952000145F3F /* AppDelegate.swift */,
 				6DDEB2CD1E92952000145F3F /* ViewController.swift */,
 				6DDEB2CF1E92952000145F3F /* Main.storyboard */,
-				6DDEB2D51E92952000145F3F /* Assets.xcassets */,
+				6DDEB35B1E968CD400145F3F /* resources */,
 				6DDEB2D71E92952000145F3F /* LaunchScreen.storyboard */,
 				6DDEB2DA1E92952000145F3F /* Info.plist */,
 				6DDEB2D21E92952000145F3F /* NotificationsProject.xcdatamodeld */,
-				6DDEB2E01E92A96700145F3F /* sound.mp3 */,
 			);
 			path = NotificationsProject;
+			sourceTree = "<group>";
+		};
+		6DDEB35B1E968CD400145F3F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DDEB35C1E968EC600145F3F /* video.mp4 */,
+				6DDEB2E01E92A96700145F3F /* sound.mp3 */,
+				6DDEB2D51E92952000145F3F /* Assets.xcassets */,
+				6DDEB3591E968CCD00145F3F /* image.jpg */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +145,10 @@
 			files = (
 				6DDEB2D91E92952000145F3F /* LaunchScreen.storyboard in Resources */,
 				6DDEB2D61E92952000145F3F /* Assets.xcassets in Resources */,
+				6DDEB35D1E968EC600145F3F /* video.mp4 in Resources */,
 				6DDEB2D11E92952000145F3F /* Main.storyboard in Resources */,
 				6DDEB2E11E92A96700145F3F /* sound.mp3 in Resources */,
+				6DDEB35A1E968CCD00145F3F /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +323,7 @@
 				6DDEB2DF1E92952000145F3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

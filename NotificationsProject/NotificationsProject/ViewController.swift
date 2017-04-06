@@ -41,6 +41,12 @@ class ViewController: UIViewController {
             content.body = "body"
             content.sound = UNNotificationSound(named: "sound.mp3")
             
+            if let url = Bundle.main.url(forResource: "video", withExtension: "mp4"),
+                let attach = try? UNNotificationAttachment(identifier: "image", url: url, options: nil){
+                content.attachments = [attach]
+                
+            }
+            
             let request = UNNotificationRequest(identifier: "my_note", content: content, trigger: trigger)
             
             //UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
@@ -65,14 +71,14 @@ class ViewController: UIViewController {
         
         
         
-                
+        
     }
     
     @IBAction func tapAction(_ sender: Any) {
         textField.resignFirstResponder()
     }
     
-
+    
 }
 
 
